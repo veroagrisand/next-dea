@@ -11,7 +11,7 @@ const ViewUserButton: React.FC<ViewUserButtonProps> = ({ userId }) => {
      return (
           <>
                <button onClick={handleClick} className="bg-gray-700">
-                    Lihat user
+                    Show user post
                </button>
           </>
      );
