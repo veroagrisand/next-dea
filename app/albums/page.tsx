@@ -1,8 +1,8 @@
+import { Button } from "@/components/ui/button";
 import CardList from "../components/Posts/CardList";
 import ViewUserButton from "../components/ViewUserButton";
 
 const base__url = "https://jsonplaceholder.typicode.com/albums";
-
 interface Ialbums {
   userId: number;
   id: number;
@@ -25,6 +25,7 @@ const AlbumPage = async () => {
             <p>{album.id}</p>
             <p>{album.title}</p>
             <ViewUserButton userId={album.userId} />
+            <Button className="bg-stone-700 px-6 py-6">Ver</Button>
           </CardList>
         );
       })}
